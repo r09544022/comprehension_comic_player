@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <title></title>
+
+    <style>
+        .slideanimate {
+            visibility: hidden;
+        }
+
+        .slide {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center"
+    style="width: 100vw;background:linear-gradient(coral, dodgerblue);height: 10000px;">
+    <img src="https://lh3.googleusercontent.com/lbaPxLj6X1jeD35navj49skwCUMCE98hAW9j7x0JULken0SQGnfwv3tSP72KmS7X2eTS7L6IaoZcH2RnXdLZhJpw546u6NiNlcelvUPzfOjpuf_cY7NYfU0rjS4KeghGbeLXku7MOX4=w2400"
+        class="img-fluid slideanimate" data-pos=1000 data-direction="fadeInUp"
+        style="position: fixed;left: -100px;top:0px;width:100vw;">
+    <img src="https://lh3.googleusercontent.com/lbaPxLj6X1jeD35navj49skwCUMCE98hAW9j7x0JULken0SQGnfwv3tSP72KmS7X2eTS7L6IaoZcH2RnXdLZhJpw546u6NiNlcelvUPzfOjpuf_cY7NYfU0rjS4KeghGbeLXku7MOX4=w2400"
+        class="img-fluid slideanimate" data-pos=2000 data-direction="fadeInUp"
+        style="position: fixed;left: -100px;top:0px;width:100vw;">
+    <img src="https://lh3.googleusercontent.com/xsJpG5kZProAHoT4UKw85fVxMH7ZIUsOElSBP1Q8edLuSd2UULxohDos73lO45WdiZF2jjzUbPFScMMajIdaGI0XoL7Ql2VEHJ2kjDbMuenSD5PMJmSNaRvLUe-eRfXh_g0vNanufnU=w2400"
+        class="img-fluid slideanimate" data-pos=3000 data-direction="fadeInUp"
+        style="position: fixed;left: -100px;top:0px;width:100vw;">
+    <img src="https://lh3.googleusercontent.com/5efQQ4dY-LBnWK2BqavVmNq22OsSfxE_PTGDUuynTQOrQ7BcxQIN4XsZ2tjZAirRoPyMPgVEGT72J6oPHl9t1xS64oUEDAZAoLcJH4IHfJy2U1W6QGcrwYE9YvvBbs95vPhGwtfLgvc=w2400"
+        class="img-fluid slideanimate" data-pos=4000 data-direction="fadeInUp"
+        style="position: fixed;left: -100px;top:0px;width:100vw;">
+    <img src="https://lh3.googleusercontent.com/vOcnVY8MIhuw1hwgpw1S8a7lw-z8L9RMCc3gqODq6G7VvA2jxDbT9wjZZnR0kDwsMk0i0PyjauTTDG2E5V3CqTNi2S93ADfx8FiE8kbqiy0f06DZMGBoolUqdx254aSmNdEzJ1FDlT8=w2400"
+        class="img-fluid slideanimate" data-pos=5000 data-direction="fadeInUp"
+        style="position: fixed;left: -100px;top:0px;width:100vw;">  
+        
+<!--        <div style="position:absolute;background-color:rgba(0,0,0,0.5);width:50vw;min-height:500px"></div>-->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            var winh = $(window).height();
+            $(window).scroll(function() {
+                var scrolled = $(window).scrollTop();
+                $(".slideanimate").each(function () {
+                    if (scrolled > $(this).data("pos")) {
+                        $(this).addClass(
+                            "animate＿animated slide animate＿" + $(this).data("direction"));
+                    }
+                    if (scrolled == 0) {
+                        $(this).removeClass(
+                            "animate＿animated slide animate＿" + $(this).data("direction"));
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+    
